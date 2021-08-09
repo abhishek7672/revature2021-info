@@ -1,23 +1,20 @@
 package string;
 
 public class Str4  {
-	static String secure(String s1)
-	{
-		if(s1.startsWith("https://"))
-			{return "secure";}
-		else
-		if(s1.startsWith("http://"))
-		{return "not secure";}
+	public static void 	secure(String str){
+		if(str.startsWith("https")){
+			System.out.println("secure");
+			
+		}else {
+			System.out.println("not secure");
+		}
+	
 		
-		return "not secure";
 		
 	}
-	public static void main(String[] args) 
-	{
-		System.out.println(secure("https://en.wikipedia.org/wiki/Main_Page"));
-		System.out.println(secure("http://en.wikipedia.org/wiki/Main_Page"));
-		
-		
+	public static void main(String[] args) {
+		secure("https/wikipedia.org");
+		secure("https/wekipedia.org");
 	}
 }
 

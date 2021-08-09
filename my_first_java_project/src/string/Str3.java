@@ -1,24 +1,27 @@
 package string;
 
 public class Str3 {
+	public static String domain(String s) {
+		int x =s.indexOf("/");
+		s=s.substring(0,x);
 	
-	static String domain(String str)
-	{
-		if(str.startsWith("https://"))
-			{str=str.substring(8);}
-		else
-		if(str.startsWith("http://"))
-		{str=str.substring(7);}
 		
-		int x=str.indexOf('/');
-		str=str.substring(0,x);
-		return str;
+	
+		if (s.startsWith("https")) {
+		s=s.substring(8);
+		}
+		else {
+		s.substring(7);
+			
+		}
+		return s;
+		
 	}
-	public static void main(String[] args) 
-	{
-		System.out.println(domain("https://en.wikipedia.org/wiki/Main_Page"));
-		System.out.println(domain("http://en.wikipedia.org/wiki/Main_Page"));
+	public static void main(String[]args) {
+		System.out.println(domain("https://wikipedia.org/wiki/main_page"));
 		
-
+		
+	}
 }
-}
+	
+	
