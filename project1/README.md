@@ -1,11 +1,14 @@
 ## Project Description
-The Bank app is a console based application that simulates banking operations. A customer can apply for an account, view their balance, and make withdrawals and deposits. An employee can view accounts and view account transactions for their customers. 
+The Bank app is a web based application that simulates banking operations. A customer can apply for an account, view their balance, and make withdrawals and deposits. An employee can view accounts and view account transactions for their customers. 
 
 
 ## Technologies Used
 * Java version 8
 * MySQL
 * JDBC
+* Html
+* RestApi
+* Javascript
 ## Features
 * As a user, I can login. 
 * As a customer, I can apply for a new bank account with a starting balance. 
